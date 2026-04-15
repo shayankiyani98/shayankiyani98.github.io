@@ -1,1 +1,365 @@
-<html><body><h1>Coming soon</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shayan Kiyani</title>
+  <style>
+    :root {
+      --text: #0f172a;
+      --muted: #475569;
+      --light: #64748b;
+      --border: #e2e8f0;
+      --bg: #ffffff;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 24px 56px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 40px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 220px;
+      gap: 32px;
+      align-items: start;
+    }
+
+    h1 {
+      font-size: 3rem;
+      line-height: 1.05;
+      margin: 0;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      margin-top: 12px;
+      font-size: 1.125rem;
+      color: var(--muted);
+    }
+
+    .email {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      color: var(--light);
+    }
+
+    .intro {
+      margin-top: 24px;
+    }
+
+    .intro p {
+      margin: 0 0 18px 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .photo-frame {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      overflow: hidden;
+      border-radius: 24px;
+      border: 1px solid var(--border);
+      background: #f1f5f9;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    section {
+      padding-top: 40px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin: 0;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .research-intro {
+      max-width: 700px;
+      margin-top: 20px;
+      color: var(--muted);
+    }
+
+    .research-intro p {
+      margin: 0;
+    }
+
+    .cards {
+      margin-top: 24px;
+      display: grid;
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+      background: var(--card);
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    .card p {
+      margin: 10px 0 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .paper-list {
+      margin-top: 14px;
+      display: grid;
+      gap: 8px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .subgroup {
+      margin-top: 16px;
+    }
+
+    .subgroup-title {
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    .venue {
+      color: var(--light);
+    }
+
+    .footer-note {
+      margin-top: 22px;
+      font-size: 0.95rem;
+      color: var(--light);
+    }
+
+    @media (max-width: 780px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-frame {
+        max-width: 240px;
+      }
+
+      h1 {
+        font-size: 2.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="hero">
+        <div>
+          <h1>Shayan Kiyani</h1>
+          <div class="subtitle">PhD Student, University of Pennsylvania</div>
+          <div class="email">shayank@seas.upenn.edu</div>
+
+          <div class="intro">
+            <p>
+              I am a fourth-year PhD student at the University of Pennsylvania, where I am fortunate
+              to work with Hamed Hassani and George Pappas. Before starting my PhD, I was a scientific
+              intern at the Institute of Science and Technology Austria (ISTA), where I worked with
+              Marco Mondelli for a year. I received my bachelor’s degree in Electrical Engineering
+              from Sharif University of Technology, with a major in Communication Systems and a minor
+              in Mathematics.
+            </p>
+            <p>
+              Broadly speaking, my research interests span machine learning theory, uncertainty
+              quantification, conformal prediction, reliable AI, decision-making under uncertainty,
+              and human-AI collaboration.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div class="photo-frame">
+            <img
+              src="Shayan_Kiyani_02.08.24_50 (2).jpg"
+              alt="Portrait of Shayan Kiyani"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Research</h2>
+
+      <div class="research-intro">
+        <p>
+          As AI advances to new generations every few years, both the models we build and the data
+          we feed them are becoming increasingly complex and harder to understand. This creates a
+          central challenge: how can we reliably deploy AI systems we do not fully understand into
+          the real world, where they may inform medical decisions, scientific discovery, automated
+          reasoning, and other high-stakes human workflows? I work toward this question. At the
+          center of my research is the development of distribution-free, black-box approaches to
+          uncertainty quantification for machine learning models. My goal is to use these tools to
+          design better interfaces between ML predictions and the real world, so that downstream
+          users can act on model outputs more reliably. This agenda has taken shape across several
+          connected directions:
+        </p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Principles for connecting predictions to actions</h3>
+          <p>
+            I study the decision-theoretic foundations of uncertainty quantification: what form of
+            uncertainty should be communicated to a downstream decision maker, and what actions
+            should it induce? This line of work aims to make predictive uncertainty operational,
+            rather than merely descriptive.
+          </p>
+          <div class="paper-list">
+            <div>
+              <a href="https://arxiv.org/pdf/2502.02561" target="_blank" rel="noopener noreferrer">
+                Decision Theoretic Foundations for Conformal Prediction: Optimal Uncertainty Quantification for Risk-Averse Agents
+              </a>
+              <span class="venue">, ICML 2025.</span>
+            </div>
+            <div>
+              <a href="https://arxiv.org/pdf/2510.23471" target="_blank" rel="noopener noreferrer">
+                Robust Decision-Making with Partially Calibrated Forecasters
+              </a>
+              <span class="venue">, ICLR 2026.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Human-AI collaboration</h3>
+          <p>
+            A central theme in my work is how uncertainty and interaction should be designed when
+            humans and AI systems collaborate. I am interested in frameworks that preserve human
+            strengths, avoid counterfactual harm, and enable AI systems to be genuinely helpful in
+            both uncertainty-sensitive decision making and reasoning-intensive tasks.
+          </p>
+
+          <div class="subgroup">
+            <div class="subgroup-title">Collaborative uncertainty quantification</div>
+            <div class="paper-list">
+              <div>
+                <a href="https://arxiv.org/pdf/2510.23476" target="_blank" rel="noopener noreferrer">
+                  Human-AI Collaborative Uncertainty Quantification
+                </a>
+                <span class="venue">, arXiv 2025.</span>
+              </div>
+              <div>
+                <a href="https://arxiv.org/pdf/2602.17646" target="_blank" rel="noopener noreferrer">
+                  Multi-Round Human-AI Collaboration with User-Specified Requirements
+                </a>
+                <span class="venue">, arXiv 2026.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subgroup">
+            <div class="subgroup-title">Collaborative reasoning</div>
+            <div class="paper-list">
+              <div>
+                <a href="https://arxiv.org/pdf/2602.17633" target="_blank" rel="noopener noreferrer">
+                  When to Trust the Cheap Check: Weak and Strong Verification for Reasoning
+                </a>
+                <span class="venue">, arXiv 2026.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Conformal prediction</h3>
+          <p>
+            Conformal prediction is a recurring foundation throughout my research. I work on making
+            conformal methods more informative, efficient, and robust, including questions around
+            conditional guarantees, distribution shift, online settings, and new uncertainty
+            quantification challenges arising in modern generative models.
+          </p>
+          <div class="paper-list">
+            <div>
+              <a href="https://arxiv.org/pdf/2404.17487" target="_blank" rel="noopener noreferrer">
+                Conformal Prediction with Learned Features
+              </a>
+              <span class="venue">, ICML 2024.</span>
+            </div>
+            <div>
+              <a href="https://arxiv.org/pdf/2406.18814" target="_blank" rel="noopener noreferrer">
+                Length Optimization in Conformal Prediction
+              </a>
+              <span class="venue">, NeurIPS 2024.</span>
+            </div>
+            <div>
+              <a href="https://arxiv.org/pdf/2502.13030" target="_blank" rel="noopener noreferrer">
+                Conformal Inference under High-Dimensional Covariate Shifts via Likelihood-Ratio Regularization
+              </a>
+              <span class="venue">, NeurIPS 2025.</span>
+            </div>
+            <div>
+              <a href="https://arxiv.org/pdf/2502.10947" target="_blank" rel="noopener noreferrer">
+                The Relationship between No-Regret Learning and Online Conformal Prediction
+              </a>
+              <span class="venue">, ICML 2025.</span>
+            </div>
+            <div>
+              <a href="https://arxiv.org/pdf/2506.05497" target="_blank" rel="noopener noreferrer">
+                Conformal Prediction Beyond the Seen: A Missing Mass Perspective for Uncertainty Quantification in Generative Models
+              </a>
+              <span class="venue">, NeurIPS 2025.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-note">
+        For a full list of publications, see my
+        <a href="#" target="_blank" rel="noopener noreferrer">Google Scholar profile</a>.
+      </div>
+    </section>
+  </div>
+</body>
+</html>
